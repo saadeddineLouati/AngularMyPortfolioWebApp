@@ -1,9 +1,16 @@
-<app-header></app-header>
+<app-header (optionSelected)="onNavigation($event)"></app-header>
+<app-home *ngIf="optionLoaded !== 'About' && optionLoaded !== 'Projects' && optionLoaded !== 'Skills' && optionLoaded !== 'Clients' && optionLoaded !== 'Contact' && optionLoaded !== 'Ressources'"></app-home>
+
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <app-recipe></app-recipe>
-      <app-projects-list></app-projects-list>
+      <app-projects-list *ngIf="optionLoaded === 'Projects'"></app-projects-list>
+      <app-about *ngIf="optionLoaded === 'About'"></app-about>
+      <app-skills *ngIf="optionLoaded === 'Skills'"></app-skills>
+      <app-clients *ngIf="optionLoaded === 'Clients'"></app-clients>
+      <app-contact *ngIf="optionLoaded === 'Contact'"></app-contact>
+      <app-ressources *ngIf="optionLoaded === 'Ressources'"></app-ressources>
     </div>
   </div>
 </div>
+<app-footer (optionSelected)="onNavigation($event)"></app-footer>

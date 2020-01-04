@@ -1,1 +1,14 @@
-<p>projects-list works!</p>
+<div class="row">
+    <div class="col">
+        <app-project-edit></app-project-edit>
+        <hr>
+        <ul class="list-group bg-light">
+            <a href="#" class="list-group-item" style="cursor: pointer; background-color: transparent;" *ngFor="let ingredient of ingredients">
+                <div class="row">
+                    <div class="col">◄ {{ingredient.name}}</div>
+                    <div class="col-auto">{{ingredient.amount}} £</div>
+                </div>
+            </a>
+        </ul>
+    </div>
+</div>

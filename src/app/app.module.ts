@@ -10,6 +10,18 @@ import { RecipeListComponent } from './recipe/recipe-list/recipe-list.component'
 import { RecipeItemComponent } from './recipe/recipe-item/recipe-item.component';
 import { RecipeDetailComponent } from './recipe/recipe-detail/recipe-detail.component';
 import { ProjectEditComponent } from './projects-list/project-edit/project-edit.component';
+import { AboutComponent } from './about/about.component';
+import { SkillsComponent } from './skills/skills.component';
+import { ClientsComponent } from './clients/clients.component';
+import { ContactComponent } from './contact/contact.component';
+import { RessourcesComponent } from './ressources/ressources.component';
+import { HomeComponent } from './home/home.component';
+import { FooterComponent } from './footer/footer.component';
+import { ExpirienceComponent } from './about/expirience/expirience.component';
+import { QualificationsComponent } from './about/qualifications/qualifications.component';
+import { CertificationsComponent } from './about/certifications/certifications.component';
+import { LanguageComponent } from './about/language/language.component';
+import { InterestsComponent } from './about/interests/interests.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +32,19 @@ import { ProjectEditComponent } from './projects-list/project-edit/project-edit.
     RecipeListComponent,
     RecipeItemComponent,
     RecipeDetailComponent,
-    ProjectEditComponent
+    ProjectEditComponent,
+    AboutComponent,
+    SkillsComponent,
+    ClientsComponent,
+    ContactComponent,
+    RessourcesComponent,
+    HomeComponent,
+    FooterComponent,
+    ExpirienceComponent,
+    QualificationsComponent,
+    CertificationsComponent,
+    LanguageComponent,
+    InterestsComponent
   ],
   imports: [
     BrowserModule

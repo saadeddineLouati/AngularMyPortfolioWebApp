@@ -9,6 +9,7 @@ import { Recipe } from '../recipe.model';
 export class RecipeListComponent implements OnInit {
   recipes: Recipe[] = [
     new Recipe(`Ionic project`, `Mobile application`, `https://cdn.imgbin.com/18/14/16/imgbin-mobile-app-euclidean-icon-click-the-ppt-phone-material-2Lqgh9BhdFBUtFQMCnEBaKrDq.jpg`),
+    new Recipe(`React project`, `Web application`, `https://cdn.imgbin.com/18/14/16/imgbin-mobile-app-euclidean-icon-click-the-ppt-phone-material-2Lqgh9BhdFBUtFQMCnEBaKrDq.jpg`),
   ];
 
   constructor() { }
